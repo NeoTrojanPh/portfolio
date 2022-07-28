@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NEOTROJAN | Home</title>
+    <script src="util.js"></script>
+    <script src="main.js"></script>
+    <script type="text/javascript">
+      window.addEventListener('load', function () {
+          fetching('templates/header.html','.header');
+          fetching('templates/index.html','.body');
+          fetching('templates/footer.html','.footer');
+      });
+
+      function loadPage(ele){
+        var paged = ele.getAttribute("data");
+
+        fetching('templates/'+paged+".html",'.body');
+
+        setTimeout(function(){
+          const boxes = Array.from(document.getElementsByClassName('nav-link'));
+          boxes.forEach(box => {
+            box.classList.remove('active');
+          });
+
+          let node = document.querySelector('a[data="'+paged+'"]');
+              node.classList.add("active");
+        },200);
+
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header">
+    </div>
+
+    <div class="body">
+    </div>
+
+    <div class="footer">
+
+    </div>
+  </body>
+  </html>

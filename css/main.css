@@ -1,0 +1,265 @@
+header{
+  background:#111;
+  width:100%;
+  height:100px;
+}
+
+header .container{
+display: flex;
+justify-content: center;
+align-items:center;
+height:100%;
+}
+
+
+.page-wrap{
+  padding:5rem 0;
+}
+
+header .top-bar{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+header .top-bar li a{
+  padding:.25rem 1rem;
+  text-decoration: none;
+}
+
+
+header .top-bar li:first-child a{
+  padding-left:0px;
+}
+
+header .top-bar li:last-child a{
+  padding-right:0px;
+}
+
+header .top-bar li .sub-menu{
+  display:none;
+  position:absolute;
+  top:100%;
+  left:0;
+  background:#fff;
+  box-shadow:1px 1px 10px rgba(0,0,0,0.1);
+  margin:0;
+  padding:0;
+  list-style-type:none;
+  width:200px;
+  border-radius:.5rem;
+  z-index:999;
+}
+
+header .top-bar .menu-item-has-children:hover .sub-menu{
+display: block;
+}
+
+header .top-bar li{
+  position:relative;
+}
+
+header .top-bar li .sub-menu a{
+  color:red;
+  padding:.25rem;
+  text-align: center;
+  display:block;
+  text-decoration: none;
+
+}
+
+header .top-bar li .sub-menu a:hover{
+  color:black;
+}
+
+.header-top-main li{
+  padding-right:2rem !important;
+}
+
+.nav-link{
+  color:#000 !important;
+}
+
+.body-default-padding{
+padding-left:5.5rem !important;
+}
+/*
+-----------------------------
+*/
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+/* Show it is fixed to the top */
+body {
+  min-height: 75rem;
+  padding-top: 4.5rem;
+  font-family: Roboto;
+}
+
+/*
+---------------------------
+*/
+.prof-img-cir{
+  width: 110px;
+  height:110px;
+  border-radius:55px;
+}
+
+.prof-card{
+  margin-top:-158px;
+}
+
+.prof-card .row{
+  padding:0px 20px;
+}
+
+.prof-card .prof-details{
+  padding-top:30px;
+}
+
+.prof-card .details p{
+  padding:0px;
+  margin:0px;
+  padding-bottom:5px;
+  text-align: left;
+}
+
+.prof-card .name{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  color: #000000;
+}
+
+.prof-card .work{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  color: #000000;
+}
+
+.prof-card .location, .prof-card .status{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.prof-card .location img, .prof-card .status img, .prof-card .card-text img{
+  margin-right:7px;
+}
+
+.prof-card .rate-cont p{
+  padding:0px;
+  margin:0px;
+}
+
+.prof-card .rate-cont .numb, .prof-card .about h5{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+}
+
+.prof-card .rate-cont .tile, .prof-card .about p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  color: #000000;
+}
+
+.prof-card .prof-btn-cont{
+  padding-top:25px;
+  text-align:left;
+}
+
+.prof-card .prof-btn-cont a{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px !important;
+  padding:10px 15px;
+}
+
+.prof-card .about h5, .prof-card .about p{
+  text-align:left;
+}
+
+.prof-main-content .prof-main-col{
+  padding:0px;
+}
+
+.nav-link-col{
+  padding:12px;
+}
+
+.nav-link-right-side{
+  padding:20px;
+  text-align:left;
+}
+
+.about-cont p::first-letter{
+    font-size: 200%;
+    color: #c3c3c3;
+}
+
+.header-top-main a:hover, .header-top-main a.active{
+  color:#808080 !important;
+}
+
+
+.myowngrid>* {
+  padding-right: calc(var(--bs-gutter-x) * .9) !important;
+  padding-left: calc(var(--bs-gutter-x) * .9) !important;
+
+  padding-top: calc(var(--bs-gutter-y) * .9) !important;
+  padding-bottom: calc(var(--bs-gutter-y) * .9) !important;
+}
