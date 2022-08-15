@@ -263,3 +263,7 @@ body {
   padding-top: calc(var(--bs-gutter-y) * .9) !important;
   padding-bottom: calc(var(--bs-gutter-y) * .9) !important;
 }
+/*-----------------------------*/
+.card-img-top{
+  height:345px !important;
+}
