@@ -11,6 +11,9 @@ align-items:center;
 height:100%;
 }
 
+.myfooter{
+  margin-top:90px !important;
+}
 
 .page-wrap{
   padding:5rem 0;
@@ -140,7 +143,6 @@ padding-left:5.5rem !important;
 }
 /* Show it is fixed to the top */
 body {
-  min-height: 75rem;
   padding-top: 4.5rem;
   font-family: Roboto;
 }
@@ -263,7 +265,10 @@ body {
   padding-top: calc(var(--bs-gutter-y) * .9) !important;
   padding-bottom: calc(var(--bs-gutter-y) * .9) !important;
 }
-/*-----------------------------*/
-.card-img-top{
-  height:345px !important;
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+.card-img-top {
+  height: 345px !important;
 }
