@@ -1,4 +1,4 @@
-import * as util from './util';
+import * as util from './util.js';
 /*
 file:'templates/header.html'
 selector:'.footer'
