@@ -1,8 +1,13 @@
-import * as util from '../util.js';
+// @ts-ignore
+import * as util from './util.js';
 /*
 file:'templates/header.html'
 selector:'.footer'
 */
+
+
+// @ts-ignore
+window.loadPage = loadPage;
 
 function fetching(file, selector) {
   // @ts-ignore
@@ -40,6 +45,7 @@ window.addEventListener('load', () => {
   fetching('templates/footer.html', '.footer');
 
   setTimeout(function(){
+    unique1233_gate = true;
     // @ts-ignore
     document.getElementById('loadFirst').click();
   },2000);
@@ -48,5 +54,6 @@ window.addEventListener('load', () => {
 });
 
 
-// @ts-ignore
-window.loadPage = loadPage;
+
+
+
